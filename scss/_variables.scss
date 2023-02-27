@@ -1,1 +1,15 @@
+/* ESTE MAP CONTIENE LA PALETA DE COLORES DEL SITIO */
+$background: (
+    blue: #0607E4,
+    green: #3fa39c,
+    black: #292f36,
+    yellow: #f9c10d,
+    gray: #eff3f5,
+    
+);
 
+@each $fondo, $color in $background {
+    .bg-#{$fondo}{
+        background: $color;
+    }
+}

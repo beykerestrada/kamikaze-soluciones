@@ -1,6 +1,4 @@
-/* Aqui están los mixins para el desafio */
-
-/* Este mixing lo incluí en las tarjetas de cada sección */
+/* ESTILOS PARA LAS TARJETAS DE SERVICIOS */
 @mixin bg-card {
         background: rgba(255, 255, 255, 0.1);
         border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -10,12 +8,3 @@
         transition: all .3s;
 }
 
-@mixin grid__layout {
-        display: grid;
-        justify-items: center;
-        padding-bottom: 60px;
-        column-gap: 20px;
-        row-gap: 40px;
-        grid-auto-rows: auto;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
