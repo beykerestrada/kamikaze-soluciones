@@ -10,6 +10,7 @@
 body {
     background-color: #eff3f5;
 }
+
 li {
     list-style: none;
 }
@@ -22,65 +23,76 @@ li {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
     ul {
         display: flex;
-        margin-right: 5%;
+        margin-right: 10%;
+
         a {
             padding: 10px;
             font-size: 20px;
-            color: #eff3f5;
+            color: #3d535f;
         }
     }
 }
+
 header {
     position: sticky;
     top: 0px;
     z-index: 5000;
 }
+
 .contenedor__header {
     height: 80px;
-    margin: 0 5%;
+    margin: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
+
     a {
         text-decoration: none;
     }
+
     .logo {
-        color: #eff3f5;
+        color: #3d535f;
         font-size: 30px;
         font-weight: 600;
     }
 
     //menu de navegacion
-        .menu {
-            #check {
-                display: none;
-                width: 50%;
-            }
-            .checkBtn {
-                display: none;
-            }
-            ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                li {
+    .menu {
+        #check {
+            display: none;
+            width: 50%;
+        }
+
+        .checkBtn {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                padding: 10px;
+
+                a {
                     padding: 10px;
-                    a {
-                        padding: 10px;
-                        color: #eff3f5;
-                        text-decoration: none;
-                        .fa-whatsapp {
-                            font-size: 30px;
-                        }
+                    color: #3d535f;
+                    text-decoration: none;
+
+                    .fa-whatsapp {
+                        font-size: 30px;
                     }
-                    
                 }
+
             }
         }
     }
+}
 
 /* FIN ESTILOS CABECERA */
 /* COMIENZO ESTILOS HERO */
@@ -92,31 +104,44 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
     .heroText {
         width: 60%;
-        .heroTitle{
+
+        .heroTitle {
             font-size: 30px;
             letter-spacing: 5px;
             color: #3d535f;
         }
+
         h1 {
-            font-size: 55px;
+            font-size: 30px;
         }
+
         .multiText {
-            color: #0607E4;
+            color: #C10000;
+            opacity: .7;
         }
+
+        h2 {
+            font-size: 60px;
+            color: #1E1926;
+        }
+
         p {
             width: 90%;
             color: #3d535f;
             font-size: 1.2em;
+           
         }
+
         .buttons {
-            button {    
+            button {
                 position: relative;
                 font-size: 25px;
                 font-weight: 400;
                 padding: 8px 25px;
-                margin:40px 20px 40px 0;
+                margin: 40px 20px 40px 0;
                 letter-spacing: 2px;
                 border: none;
                 background-color: #0607E4;
@@ -124,39 +149,46 @@ header {
                 border-radius: 3px;
                 box-shadow: 0 15px 10px rgba(41, 47, 54, 0.418);
                 cursor: pointer;
+
                 &:hover {
                     background-color: #3b3bff;
                 }
+
                 &:active {
                     box-shadow: inset 1px 1px 1px #646566;
                 }
             }
         }
     }
+
     .heroImg {
         width: 40%;
+
         .imgBox {
             img {
 
                 animation: animateLogo 4s linear infinite;
+
                 @keyframes animateLogo {
                     50% {
                         right: 30px;
                         top: -10px;
                     }
-                    100% {
 
-                    }
+                    100% {}
                 }
             }
         }
     }
 }
+
 .waveContainer {
     width: 100%;
+
     .wave {
         transform: translateY(-100px);
 
     }
 }
+
 /* FINAL ESTILOS HERO */

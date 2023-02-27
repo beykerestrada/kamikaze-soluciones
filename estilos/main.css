@@ -46,12 +46,12 @@ li {
 }
 .menuSocial ul {
   display: flex;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 .menuSocial ul a {
   padding: 10px;
   font-size: 20px;
-  color: #eff3f5;
+  color: #3d535f;
 }
 
 header {
@@ -62,7 +62,7 @@ header {
 
 .contenedor__header {
   height: 80px;
-  margin: 0 5%;
+  margin: 0 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +72,7 @@ header {
   text-decoration: none;
 }
 .contenedor__header .logo {
-  color: #eff3f5;
+  color: #3d535f;
   font-size: 30px;
   font-weight: 600;
 }
@@ -93,7 +93,7 @@ header {
 }
 .contenedor__header .menu ul li a {
   padding: 10px;
-  color: #eff3f5;
+  color: #3d535f;
   text-decoration: none;
 }
 .contenedor__header .menu ul li a .fa-whatsapp {
@@ -120,10 +120,15 @@ header {
   color: #3d535f;
 }
 .hero .heroText h1 {
-  font-size: 55px;
+  font-size: 30px;
 }
 .hero .heroText .multiText {
-  color: #0607E4;
+  color: #C10000;
+  opacity: 0.7;
+}
+.hero .heroText h2 {
+  font-size: 60px;
+  color: #1E1926;
 }
 .hero .heroText p {
   width: 90%;
