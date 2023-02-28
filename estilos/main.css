@@ -19,6 +19,27 @@
   background: #eff3f5;
 }
 
+.primaryButton {
+  position: relative;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 8px 25px;
+  margin: 40px 20px 40px 0;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #0607E4;
+  color: #eff3f5;
+  border-radius: 3px;
+  box-shadow: 0 15px 10px rgba(41, 47, 54, 0.418);
+  cursor: pointer;
+}
+.primaryButton:hover {
+  background-color: #3b3bff;
+}
+.primaryButton:active {
+  box-shadow: inset 1px 1px 1px #646566;
+}
+
 /* ESTILOS PARA LAS TARJETAS DE SERVICIOS */
 * {
   margin: 0;
@@ -30,6 +51,7 @@
 /* ESTILOS GENERALES DEL SITIO */
 body {
   background-color: #eff3f5;
+  min-width: 100vh;
 }
 
 li {
@@ -135,26 +157,6 @@ header {
   color: #3d535f;
   font-size: 1.2em;
 }
-.hero .heroText .buttons button {
-  position: relative;
-  font-size: 25px;
-  font-weight: 400;
-  padding: 8px 25px;
-  margin: 40px 20px 40px 0;
-  letter-spacing: 2px;
-  border: none;
-  background-color: #0607E4;
-  color: #eff3f5;
-  border-radius: 3px;
-  box-shadow: 0 15px 10px rgba(41, 47, 54, 0.418);
-  cursor: pointer;
-}
-.hero .heroText .buttons button:hover {
-  background-color: #3b3bff;
-}
-.hero .heroText .buttons button:active {
-  box-shadow: inset 1px 1px 1px #646566;
-}
 .hero .heroImg {
   width: 40%;
 }
@@ -170,11 +172,96 @@ header {
 
 .waveContainer {
   width: 100%;
+  background-color: transparent;
 }
 .waveContainer .wave {
   transform: translateY(-100px);
 }
 
 /* FINAL ESTILOS HERO */
+/* COMIENZO SECCION SERVICIOS */
+.servicios {
+  position: relative;
+  top: -120px;
+  width: 100%;
+  padding: 0 10% 10% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3d535f;
+}
+.servicios h2 {
+  font-size: 50px;
+  color: #eff3f5;
+  margin-bottom: 80px;
+}
+.servicios .cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 30px;
+}
+.servicios .cardsContainer .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 30%;
+  min-width: 250px;
+  max-width: 300px;
+  height: 400px;
+  background: #eff3f5;
+  border-radius: 3px;
+  box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+.servicios .cardsContainer .card .imgContainer {
+  width: 100%;
+  height: 50%;
+  padding: 2.5%;
+}
+.servicios .cardsContainer .card .imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+.servicios .cardsContainer .card .textContainer {
+  height: 30%;
+  width: 100%;
+  padding: 5%;
+}
+.servicios .cardsContainer .card .textContainer h3 {
+  margin-bottom: 20px;
+  color: #C10000;
+  opacity: 0.7;
+}
+.servicios .cardsContainer .card .btnContainer {
+  height: 20%;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.servicios .cardsContainer .card .btnContainer a {
+  margin: 0;
+  display: block;
+  justify-self: center;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: 2px solid #0607E4;
+  color: #0607E4;
+  transition: all 0.4s;
+}
+.servicios .cardsContainer .card .btnContainer a:hover {
+  background-color: #0607E4;
+  color: #eff3f5;
+}
+
+/* FINAL SECCION SERVICIOS */
 
 /*# sourceMappingURL=main.css.map */
