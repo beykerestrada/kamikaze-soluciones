@@ -9,7 +9,7 @@
 /* ESTILOS GENERALES DEL SITIO */
 body {
     background-color: #eff3f5;
-    min-width: 100vh;
+    min-height: 100vh;
 }
 
 li {
@@ -102,12 +102,13 @@ header {
     height: 90%;
     padding: 40px 10%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
 
     .heroText {
-        width: 60%;
+        width: 50%;
 
         .heroTitle {
             font-size: 30px;
@@ -137,21 +138,12 @@ header {
     }
 
     .heroImg {
-        width: 40%;
+        width: 50%;
 
         .imgBox {
+            width: 100%;
             img {
-
-                animation: animateLogo 4s linear infinite;
-
-                @keyframes animateLogo {
-                    50% {
-                        right: 30px;
-                        top: -10px;
-                    }
-
-                    100% {}
-                }
+                width: 100%;
             }
         }
     }
